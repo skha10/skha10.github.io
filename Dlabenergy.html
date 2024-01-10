@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Energy in Global Development</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/IDPhoto.svg" alt="" /></span><span class="title">Stephanie Khaguli | Portfolio</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+
+									<ul class="icons">
+										<li><a href="index.html"class="fa fa-home" aria-hidden="true"><span class="label">Home</span></a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<!--<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav><-->
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Energy in Global Development Project | Chicken Brooder Box Heating System</h1>
+							
+							<p><span class="image left"><img src="images/dlabenergybanner.PNG" alt="" /></span>Young chicks are unable to maintain their required body temperatures, and require an external heat source when external ambient temperatures dip. In this project overseen by MIT’s D-Lab, and in partnership with BiObala, African Solar Generation and the Antenna Foundation, I worked in a team of 4 to brainstorm and develop an improved heating system for chick brooder boxes in smallholder farms in Obala and Yaounde, Cameroon.  </p>
+							<p><i><u>Key Skills</u> : Independent research and experimentation, wet lab skills, solvent casted membranes, thin membrane research, porometry permeability tests, scanning electronmicroscopy</i></p>
+							<br><br>
+
+							<h2>Framing the Problem</h2>
+							<p><span class="image left"><img src="images/dlabenergyfirewood.PNG" alt="" width="300" height="300" /></span>From conversations with our partners and previous projects, we gathered that currently most small chicken farmers in Cameroon keep their chicks warm by having a fire near their chicks. <br><br>This method is time-consuming for farmers, who often have to check the fires multiple times a night, and also exposes the farmers to pollutants that negatively affect their health.</p>
+							<br><br><br><br><br>
+							<p><span class="image right"><img src="images/dlabenergysolarbrooder.PNG" alt="" width="300" height="300"/></span>Our partner African Solar Generation (ASG) designed and built a solar brooder box to address these issues. The box used energy from solar photovoltaic panels to charge a battery and power a heat lamp, which kept the chickens warm. <br><br>However, the box cost more than 1000 US dollars, much more than most Cameroonian chicken farmers could afford. In addition, on days when there was not enough sun to fully charge the battery, the box was not able to keep the chicks warm overnight. </p>
+							<br><br><br>
+							<p> Prior D-Lab Energy teams innovated on existing chick brooder boxes by introducing phase change materials (PCM) such as paraffin and beeswax as heat sources; however, we found the process for preparing beeswax “thermal batteries” to be challenging for farmers due to its time and effort requirements and safety concerns. </p>
+							<div class="row gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/dlabenergypcm1.PNG" alt="" /></span></div>
+								<div class="col-8"><span class="image fit"><img src="images/dlabenergypcm2.PNG" alt="" /></span></div>
+							</div>
+							
+							<p><br>In response, we investigated the feasibility of <b>utilizing hot water as a heat source</b> to reduce costs and increase usability. </p>
+							
+							<h2>Experimental Design and Results</h2>
+							<h3>Baseline Validation Test</h3>
+							<p>An initial proof of concept experiment was conducted to test the viability of water as a heat source. Using an existing Brooder Box Built by previous teams.  We placed six 24-fl. oz. glass jars filled with boiling water into the main brooder box and allowed the heat to disperse throughout the box. We used an Arduino Uno and temperature probes to measure temperatures within the water in the jars (“water”), outside of the jars (“near end”), at the far end of the box from the jars (“far end”), and ambient temperature (“ambient”). As illustrated below, the brooder box was able to maintain temperatures above 30 ºC for 7.78 hours</p>
+							<div class="row gtr-uniform">
+								<div class="col-6"><span class="image fit"><img src="images/dlabenergyhotwaterviab1.PNG" alt="" /></span></div>
+								<div class="col-6"><span class="image fit"><img src="images/dlabenergyhotwaterviab2.PNG" alt="" /></span></div>
+							</div>
+							<p>This proved the viability of water as a heat source for an extended period of time, however the implementation would have to be revised to better fit the project constraints:</p> 
+							<ul>
+								<li>ideal temperatures fell in the range of 30-37 degrees celcius. It was necessary to maintain that range throughout the entire duration of time</li>
+								<li>Temperatures werer extremely hot right next to the jars. We needed to develop some sort of insulating chamber to protect the chicks that may wander close to the heat source.</a></li>
+								<li>the longer the temperatures stayed in range the better. OUr partners wanted us to shoot for 12+ hours in the ideal temperature range</li>
+								<li>reproducibility of results in different sized boxes. There was a need to develop a heat transfer model that would allow the local farmers to achieve similar results in different volumetric boxes, so as to make use of existing brooder boxes</a></li>
+							</ul>
+							<h3>Mathematical Modeling, Experimentation and Scaling</h3>
+							<p><span class="image right"><img src="images/dlabenergyconslab.PNG" alt="" width="300" height="300"/></span>We brainstormed different configurations for the heat chamber setup containing the hot water "thermal batteries". Using one of the configurations, which was a heat chamber with a conductive slab, we were able to develop a heat transfer model using a thermal resistivity circuit. <br><br>With this model plugged into MATLAB, we were able to graph the theoretical water temperature profile over time, as well as the Chick brooder box temperature over time. We then validated this model by running the experiment overnight and obtaining readings consistent with the model.</p>
+							<br><br><br>
+							<div class="row gtr-uniform">
+								<div class="col-6"><span class="image fit"><img src="images/dlabenergycondtest1.PNG" alt="" /></span></div>
+								<div class="col-6"><span class="image fit"><img src="images/dlabenergycondtest2.PNG" alt="" /></span></div>
+							</div>
+							<p>This result confirmed the viability of the resistivity model as a tool to inform future experimental design decisions, particularly what parameters can be used to accomplish the desired temperature profile which was useful information for both convective and conductive experiments since there are shared parameters such as the <i>resistivity of water convection in the pot</i> and <i>resistivity across the heat chamber insulation</i>. It also helped us narrow down two tunable parameters that can be used to control heat output and maintenace, that is the <u>insulation of the thermal batteries themselves</u>, and the <u>insulation within the heat chamber.</u></p>
+							<p>This proposed solution was attractive to the project partners since, if properly utilized, only needed water to be boiled once, as opposed to a constantly running fire for heat. This step could also be absorbed into other daily activities such as before cooking a meal, in order to take advantage of the lit fire </p>
+							<p>Future work was necessary, however, to further <i>refine the insulation properties of the heat chamber and batteries</i> in order to <b>moderate peak temperatures</b>, as well as the <b>heat transfer rate from the hot water</b> to suit the needs of existing chick brooder boxes in shareholder farms. This would involve fieldwork travel to Cameroon to build the heat chambers using locally available materials and demonstrate their function to the farmers. <br><br>Ideally, we would develop a standard custom heat chamber to match the specifications of the larger brooder boxes already built by our project partners for use with solar heating. <br><br>Further side projects would include developing an attached temperature monitoring panel similar to our experiments' arduino setup, for the farmers to be able to check the internal temperature of the box without opening it and losing heat. In addition, the parnters expressed the desire to harness their solar heating structures to heat the water, for further sustainability gains in farms where the solar heating costs were not a constraint.</p>
+							
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!--<section>
+								<h2>Get in touch</h2>
+								<form name= get-in-touch method="post" action="https://script.google.com/macros/s/AKfycbwO7IXxhthcFXcSuAB-OUAVD-fTD4d7PyW4G8nw3ymJYDDu7TBRIAVKS30i6U7oWdbwww/exec">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+								
+							</section><-->
+							<section>
+								<!--<h2>Follow</h2><-->
+								<h2>Get in touch</h2>
+								<ul class="icons">
+									<li><a href="mailto:skhaguli@mit.edu, steph.kha.10@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.linkedin.com/in/stephanie-khaguli-843627269" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<!--<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li><-->
+									
+								</ul>
+							</section>
+							<!--<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul><-->
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
